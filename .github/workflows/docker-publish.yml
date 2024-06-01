@@ -4,6 +4,9 @@ on:
   push:
     branches:
       - main
+    paths:
+      - 'Dockerfile'
+      - 'collect.py'
 
 env:
   REGISTRY: ghcr.io

@@ -19,7 +19,7 @@ To build the Docker image, use the following command:
 
 ```sh
 docker build -t ansible-ci-cd:latest .
-
+```
 
 ### Python Script (collect.py)
 The collect.py script installs specified Ansible collections using ansible-galaxy. 

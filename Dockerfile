@@ -15,7 +15,7 @@ RUN apt-get update && \
 RUN pip install --upgrade pip && \
     pip install --no-cache-dir ansible bs4 requests python-ldap hvac
 WORKDIR /ansible
-COPY collect.py /usr/local/bin/collect.py
+COPY collection.py /usr/local/bin/collection.py
 RUN python /usr/local/bin/collect.py
 
 ENTRYPOINT ["ansible-playbook"]

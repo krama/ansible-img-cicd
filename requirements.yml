@@ -1,0 +1,13 @@
+---
+collections:
+  - name: microsoft.ad
+  - name: community.hashi_vault
+  - name: community.general
+  - name: community.docker
+  - name: community.kubernetes
+  - name: community.routeros
+  - name: community.libvirt
+  - name: community.kubevirt
+  - name: community.zabbix
+  - name: community.mysql
+  - name: nginxinc.nginx_core

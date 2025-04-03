@@ -16,8 +16,9 @@ RUN apk update && \
         openldap-dev \
         cyrus-sasl-dev \
         gcc \
-        libc-dev && \
-    pip install --upgrade pip && \
+        libc-dev 
+
+RUN pip install --upgrade pip && \
     pip install --no-cache-dir \
         ansible \
         beautifulsoup4 \
@@ -28,7 +29,7 @@ RUN apk update && \
 
 WORKDIR /ansible
 
-COPY requirements.yml /ansible/requirements.yml
+COPY requirements.yml /ansible/
 
 RUN ansible-galaxy collection install -r requirements.yml
 
